@@ -1,24 +1,37 @@
-<pre>
-       .--.
-      |o_o |
-      |:_/ |
-     //   \ \
-    (|     | )
-   /'\_   _/`\
-   \___)=(___/
-</pre>
-
-<style>
-@keyframes dance {
-    0% { transform: translateY(0); }
-    25% { transform: translateY(-10px); }
-    50% { transform: translateY(0); }
-    75% { transform: translateY(10px); }
-    100% { transform: translateY(0); }
-}
-
-pre {
-    font-size: 24px;
-    animation: dance 1s infinite;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Penguin Animation</title>
+    <style>
+        body {
+            background-color: black;
+            color: rainbow;
+            font-family: monospace;
+            white-space: pre;
+            overflow: hidden;
+        }
+        @keyframes dance {
+            0% { content: "   .--.  \n  |o_o | \n  |:_/ | \n //   \ \ \n(|     | )\n/'\---'\'\n" }
+            25% { content: "   .--.  \n  |o_o | \n  |:_/ | \n //   \ \ \n(|     | )\n/'\---'\'\n" }
+            50% { content: "   .--.  \n  |o_o | \n  |:_/ | \n //   \ \ \n(|     | )\n/'\---'\'\n" }
+            75% { content: "   .--.  \n  |o_o | \n  |:_/ | \n //   \ \ \n(|     | )\n/'\---'\'\n" }
+            100% { content: "   .--.  \n  |o_o | \n  |:_/ | \n //   \ \ \n(|     | )\n/'\---'\'\n" }
+        }
+        .penguin {
+            animation: dance 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="penguin">
+          .--.  
+         |o_o | 
+         |:_/ | 
+        //   \ \ 
+        (|     | )
+        /'\---'\' 
+    </div>
+</body>
+</html>

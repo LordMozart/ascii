@@ -1,58 +1,24 @@
-# Dancing Penguin Animation
+<pre>
+       .--.
+      |o_o |
+      |:_/ |
+     //   \ \
+    (|     | )
+   /'\_   _/`\
+   \___)=(___/
+</pre>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dancing Penguin</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f8ff;
-        }
-        .penguin {
-            width: 100px;
-            height: 150px;
-            background: black;
-            position: relative;
-            border-radius: 50px 50px 0 0;
-            animation: dance 1s infinite;
-        }
-        .penguin::before {
-            content: '';
-            width: 60px;
-            height: 80px;
-            background: white;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            border-radius: 30px;
-        }
-        .penguin::after {
-            content: '';
-            width: 20px;
-            height: 20px;
-            background: orange;
-            position: absolute;
-            bottom: -10px;
-            left: 40px;
-            border-radius: 50%;
-        }
-        @keyframes dance {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="penguin"></div>
-</body>
-</html>
+<style>
+@keyframes dance {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+pre {
+    font-size: 24px;
+    animation: dance 1s infinite;
+}
+</style>
